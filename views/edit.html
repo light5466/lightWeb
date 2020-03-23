@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>edit</title>
+	<style>
+		.box{width: 400px; text-align:center;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<form action="/editBook" method="post">
+			<h3>修改图书</h3>
+			<input type="hidden" name="id" value="{{id}}">
+			书名：<input type="text" name="name" id="name" value="{{name}}"><br>
+			作者：<input type="text" name="author" id="auther" value="{{author}}"><br>
+			类型：<input type="text" name="category" id="category" value="{{category}}"><br>
+			描述：<input type="text" name="description" id="desc" value="{{description}}">
+			<br><input type="submit" value="submit">
+		</form>
+	</div>
+	
+</body>
+</html>
